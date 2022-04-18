@@ -1,0 +1,18 @@
+.wrapper{
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    h2{
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        line-height: 1em;
+        text-transform: capitalize;
+        color: #ffffff;
+        position: relative;
+        display: flex;
+        flex: 1;
+
+    }
+}

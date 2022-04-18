@@ -1,0 +1,66 @@
+.about {
+  &__content {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    &__personalWrapper,
+    &__servicesWrapper {
+      width: 50%;
+    }
+    &__personalWrapper {
+      h3 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        font-family: "Playfair Display", serif;
+        color: #ffffff;
+      }
+      p {
+        font-family: "Playfair Display", serif;
+        color: #ffffff;
+        font-size: 1.5rem;
+        line-height: 1.65;
+      }
+
+      ul > li {
+        line-height: 1em;
+        margin-bottom: 15px;
+        span.title,
+        span.value {
+          font-family: "Playfair Display", serif;
+          font-size: 16px;
+          font-weight: 700;
+          letter-spacing: 0.5px;
+          border-bottom: 2px solid #ffffff;
+          position: relative;
+          display: inline-block;
+          margin-right: 15px;
+          padding-bottom: 1px;
+          color: #ffffff;
+        }
+        span.title {
+          border-color: #00a3e1;
+        }
+        span.value {
+          border: none;
+        }
+      }
+    }
+
+    &__servicesWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      h3 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        font-family: "Playfair Display", serif;
+        color: #ffffff;
+      }
+      &__innerContent{
+          width: 500px;
+          height: 500px;
+          background: radial-gradient(500px , #fff , transparent 50%);
+      }
+    }
+  }
+}
