@@ -1,8 +1,6 @@
 import React from "react";
-import { FaBlackTie, FaLaptop } from "react-icons/fa";
-import { GoDeviceDesktop } from "react-icons/go";
-import { RiCodeView } from "react-icons/ri";
-import { DiAndroid } from "react-icons/di";
+import { FaDev, FaBlackTie, FaDatabase } from "react-icons/fa";
+import { DiAndroid , DiApple } from "react-icons/di";
 import PageHeaderContent from "../../components/PageHeaderContent";
 import "./styles.scss";
 
@@ -70,19 +68,22 @@ function About() {
           </ul>
         </div>
         <div className="about__content__servicesWrapper">
-        <h3>Services</h3>
           <div className="about__content__servicesWrapper__innerContent">
             <div>
-              <FaLaptop color="#ffdd40" size={40} />
+              <DiApple color="#ffdd40" size={60} />
+              {/* <p className="service-text">Web Design</p> */}
             </div>
             <div>
-              <GoDeviceDesktop color="#ffdd40" size={40} />
+              <FaDev color="#ffdd40" size={60} />
+              {/* <p className="service-text">Web Development</p> */}
             </div>
             <div>
-              <RiCodeView color="#ffdd40" size={40} />
+              <FaDatabase color="#ffdd40" size={60} />
+              {/* <p className="service-text">Databases</p> */}
             </div>
             <div>
-              <DiAndroid color="#ffdd40" size={40} />
+              <DiAndroid color="#ffdd40" size={60} />
+              {/* <p className="service-text">Android Developement</p> */}
             </div>
           </div>
         </div>

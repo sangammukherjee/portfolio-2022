@@ -2,6 +2,7 @@
   &__content {
     display: flex;
     gap: 20px;
+    padding: 20px;
     width: 100%;
     &__personalWrapper,
     &__servicesWrapper {
@@ -47,20 +48,61 @@
     }
 
     &__servicesWrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       h3 {
         font-size: 2.5rem;
         font-weight: 700;
         font-family: "Playfair Display", serif;
         color: #ffffff;
       }
-      &__innerContent{
-          width: 500px;
-          height: 500px;
-          background: radial-gradient(500px , #fff , transparent 50%);
+      &__innerContent {
+        width: 400px;
+        height: 400px;
+       // margin-top: 40px;
+        background: radial-gradient(200px, #ffdd40, transparent 50%);
+        position: relative;
+        border-radius: 50%;
+        border: 1.5px solid #ffdd40;
+        animation: rotation 10s linear infinite;
+        div:nth-child(1) {
+          position: absolute;
+          top: -9%;
+          left: 41.5%;
+        }
+        div:nth-child(2) {
+          position: absolute;
+          right: -7%;
+          top: 41.5%;
+        }
+        div:nth-child(3) {
+          position: absolute;
+          bottom: -8%;
+          left: 44%;
+        }
+        div:nth-child(4) {
+          position: absolute;
+          left: -7%;
+          top: 41.5%;
+        }
+        div {
+            text-align: center;
+        }
+        div > p{
+            font-size: 1.5rem;
+            font-weight: 700;
+            font-family: "Playfair Display", serif;
+            color: #ffdd40;   
+        }
       }
     }
   }
+}
+
+@keyframes rotation {
+     100%{
+         transform: rotate(360deg);
+     } 
 }
