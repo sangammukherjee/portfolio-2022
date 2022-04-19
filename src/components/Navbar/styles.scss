@@ -42,19 +42,12 @@
           background: transparent;
           transition: width 0.7s ease, background-color 0.5s ease;
         }
-        :hover, :active{
-          color : #ffdd40
-        }
         &:hover::after {
           width: 100%;
           background: #ffdd40;
         }
-        .active {
-          color: #ffdd40;
-          border: 1px solid #ffdd40;
-        }
         &__links {
-          color: #fff;
+          color: #ffdd40;
           text-decoration: none;
           padding: 0.5rem 1rem;
           height: 100%;

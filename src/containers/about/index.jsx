@@ -32,7 +32,7 @@ function About() {
     <section className="about" id="about">
       <PageHeaderContent
         headerText="About Me"
-        icon={<FaBlackTie color="white" size={40} />}
+        icon={<FaBlackTie size={40} />}
       />
       <div className="about__content">
         <div className="about__content__personalWrapper">

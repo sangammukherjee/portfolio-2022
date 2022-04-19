@@ -13,7 +13,21 @@
         font-size: 2.5rem;
         font-weight: 700;
         font-family: "Playfair Display", serif;
-        color: #ffffff;
+        color: #ffdd40;
+        &::before, &::after{
+          position: absolute;
+          content: "";
+          width: 2px;
+          height: 5px;
+          background-color: #ffdd40;
+          bottom: -1px;
+      }
+      &::before{
+          left: 0;
+      }
+       &::after {
+           right: 0;
+       }
       }
       p {
         font-family: "Playfair Display", serif;
@@ -62,7 +76,7 @@
         width: 400px;
         height: 400px;
        // margin-top: 40px;
-        background: radial-gradient(200px, #ffdd40, transparent 50%);
+        background: radial-gradient(200px, #ffdd40, transparent 90%);
         position: relative;
         border-radius: 50%;
         border: 1.5px solid #ffdd40;
@@ -105,4 +119,40 @@
      100%{
          transform: rotate(360deg);
      } 
+}
+
+@media only screen and (max-width: 768px) {
+  .about__content {
+    flex-direction: column;
+    &__personalWrapper,
+    &__servicesWrapper {
+      width: 100%;
+    }
+
+    &__servicesWrapper {
+      margin: 20px 0;
+      &__innerContent{
+        width: 250px;
+        height: 250px;
+        background: radial-gradient(100px, #ffdd40, transparent 120%); 
+        div:nth-child(1) {
+          top: -15%;
+          left: 38.5%;
+        }
+        div:nth-child(2) {
+          right: -11%;
+          top: 41.5%;
+        }
+        div:nth-child(3) {
+          bottom: -12%;
+          left: 38%;
+        }
+        div:nth-child(4) {
+          left: -12%;
+          top: 41.5%;
+        }
+      }
+    }
+
+  }
 }

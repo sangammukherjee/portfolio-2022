@@ -6,7 +6,7 @@ function Contact() {
     <section className="contact" id="contact">
              <PageHeaderContent
           headerText="Contact Me"
-          icon={<FaBlackTie color="white" size={40} />}
+          icon={<FaBlackTie size={40} />}
         /> 
     </section>
   );

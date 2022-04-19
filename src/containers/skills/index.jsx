@@ -86,7 +86,7 @@ function Skills() {
     <section id="skills" className="skills">
       <PageHeaderContent
         headerText="My Skills"
-        icon={<FaBlackTie color="white" size={40} />}
+        icon={<FaBlackTie size={40} />}
       />
       <div className="skills__content-wrapper">
         {data.map((item) => (

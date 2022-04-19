@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import PageHeaderContent from "../../components/PageHeaderContent";
 import { FaBlackTie } from "react-icons/fa";
 import "./styles.scss";
@@ -33,13 +33,13 @@ const portfolioData = [
     image: ImageThree,
   },
   {
-    sectionId: 2,
+    sectionId: 3,
     projectName: "ToDo Application",
     projectLink: "",
     image: ImageFour,
   },
   {
-    sectionId: 2,
+    sectionId: 3,
     projectName: "ToDo Application",
     projectLink: "",
     image: ImageFive,
@@ -51,25 +51,25 @@ const portfolioData = [
     image: ImageSeven,
   },
   {
-    sectionId: 2,
+    sectionId: 3,
     projectName: "ToDo Application",
     projectLink: "",
     image: ImageSix,
   },
   {
-    sectionId: 2,
+    sectionId: 3,
     projectName: "ToDo Application",
     projectLink: "",
     image: ImageEight,
   },
   {
-    sectionId: 2,
+    sectionId: 3,
     projectName: "ToDo Application",
     projectLink: "",
     image: ImageNine,
   },
   {
-    sectionId: 2,
+    sectionId: 3,
     projectName: "ToDo Application",
     projectLink: "",
     image: ImageTen,
@@ -82,36 +82,56 @@ const filteroptions = [
     id: 1,
   },
   {
-    label: "Design",
+    label: "Development",
     id: 2,
   },
   {
-    label: "Development",
+    label: "Design",
     id: 3,
-  },
+  }
 ];
 
 function Portfolio() {
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [filterValue, setFiltervalue] = useState(1);
+  console.log(hoveredIndex);
+
+  const updatedPortFolioData =
+    filterValue === 1
+      ? portfolioData
+      : portfolioData.filter((item) => item.sectionId === filterValue);
   return (
     <section id="portfolio" className="portfolio">
       <PageHeaderContent
         headerText="My Portfolio"
-        icon={<FaBlackTie color="white" size={40} />}
+        icon={<FaBlackTie size={40} />}
       />
       <div className="portfolio__content">
         <ul className="portfolio__content__filter">
           {filteroptions.map((option) => (
-            <li key={option.id}>{option.label}</li>
+            <li onClick={()=>setFiltervalue(option.id)} key={option.id}>{option.label}</li>
           ))}
         </ul>
         <div className="portfolio__content__cards">
-          {portfolioData.map((item) => (
-            <div className="portfolio__content__cards__item" >
+          {updatedPortFolioData.map((item, index) => (
+            <div
+              onMouseEnter={() => setHoveredIndex(index)}
+              onMouseLeave={() => setHoveredIndex(null)}
+              className="portfolio__content__cards__item"
+            >
               <div className="portfolio__content__cards__item__img-wrapper">
                 <a>
                   <img src={item.image} />
                 </a>
               </div>
+              {index === hoveredIndex && (
+                <div className="portfolio__content__cards__item__hover-content">
+                  <p>{item.projectName}</p>
+                  <a href={item.projectLink} role="button">
+                    Check
+                  </a>
+                </div>
+              )}
             </div>
           ))}
         </div>
