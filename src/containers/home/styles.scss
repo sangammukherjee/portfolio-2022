@@ -5,6 +5,9 @@
   justify-content: center;
   align-items: center;
   &__text-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     h1 {
       color: #ffdd40;
       margin: 0;
@@ -14,28 +17,44 @@
       position: relative;
       overflow: hidden;
       font-family: "Inconsolata", Consolas, monospace;
-      animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+      animation: typing 2.5s steps(30, end), blink-caret 0.5s step-end infinite;
       white-space: nowrap;
+    }
+    button {
+      cursor: pointer;
+      padding: 10px 70px;
+      margin-top: 10px;
+      font-size: 2rem;
+      background: transparent;
+      color: #ffdd40;
+      border: 1.5px solid #ffdd40;
+      border-radius: 4px;
+      font-weight: 500;
+      &:hover {
+        color: #000000;
+        background: #ffdd40;
+        font-weight: 500;
+      }
     }
   }
 }
 
-@media only screen and (max-width : 550px){
-  .home__text-wrapper > h1{
+@media only screen and (max-width: 550px) {
+  .home__text-wrapper > h1 {
     font-size: 3rem;
     line-height: 5rem;
   }
 }
 
-@media only screen and (min-width : 551px) and (max-width : 768px){
-  .home__text-wrapper > h1{
+@media only screen and (min-width: 551px) and (max-width: 768px) {
+  .home__text-wrapper > h1 {
     font-size: 4rem;
     line-height: 6rem;
   }
 }
 
-@media only screen and (min-width : 769px) and (max-width : 990px){
-  .home__text-wrapper > h1{
+@media only screen and (min-width: 769px) and (max-width: 990px) {
+  .home__text-wrapper > h1 {
     font-size: 6rem;
     line-height: 8rem;
   }

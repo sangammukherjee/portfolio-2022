@@ -76,8 +76,9 @@ function Resume() {
                 date="2011 - present"
                 iconStyle={{ background: "#181818", color: "#ffdd40" }}
                 icon={<MdWork />}
+                dateClassName="vertical-timeline-element-custom-date"
               >
-                <div>
+                <div className="vertical-timeline-element-title-wrapper">
                   <h3 className="vertical-timeline-element-title">
                     {item.title}
                   </h3>
@@ -109,12 +110,14 @@ function Resume() {
                 iconStyle={{ background: "#181818", color: "#ffdd40" }}
                 icon={<MdWork />}
               >
-                <h3 className="vertical-timeline-element-title">
-                  {item.title}
-                </h3>
-                <h4 className="vertical-timeline-element-subtitle">
-                  {item.subTitle}
-                </h4>
+                <div className="vertical-timeline-element-title-wrapper">
+                  <h3 className="vertical-timeline-element-title">
+                    {item.title}
+                  </h3>
+                  <h4 className="vertical-timeline-element-subtitle">
+                    {item.subTitle}
+                  </h4>
+                </div>
                 <p>{item.description}</p>
               </VerticalTimelineElement>
             ))}

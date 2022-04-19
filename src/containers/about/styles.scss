@@ -15,20 +15,6 @@
         font-weight: 700;
         font-family: "Playfair Display", serif;
         color: #ffdd40;
-        &::before, &::after{
-          position: absolute;
-          content: "";
-          width: 2px;
-          height: 5px;
-          background-color: #ffdd40;
-          bottom: -1px;
-      }
-      &::before{
-          left: 0;
-      }
-       &::after {
-           right: 0;
-       }
       }
       h3.personalContent{
         padding-top: 20px;
@@ -80,32 +66,32 @@
         color: #ffffff;
       }
       &__innerContent {
-        width: 400px;
-        height: 400px;
+        width: 350px;
+        height: 350px;
        // margin-top: 40px;
-        background: radial-gradient(200px, #ffdd40, transparent 90%);
+        background: radial-gradient(180px, #ffdd40, transparent 90%);
         position: relative;
         border-radius: 50%;
         border: 1.5px solid #ffdd40;
-        animation: rotation 10s linear infinite;
+       animation: rotation 10s linear 1s infinite;
         div:nth-child(1) {
           position: absolute;
-          top: -9%;
+          top: -11%;
           left: 41.5%;
         }
         div:nth-child(2) {
           position: absolute;
-          right: -7%;
+          right: -8%;
           top: 41.5%;
         }
         div:nth-child(3) {
           position: absolute;
-          bottom: -8%;
-          left: 44%;
+          bottom: -10%;
+          left: 42%;
         }
         div:nth-child(4) {
           position: absolute;
-          left: -7%;
+          left: -8%;
           top: 41.5%;
         }
         div {

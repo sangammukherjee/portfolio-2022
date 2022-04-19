@@ -46,10 +46,28 @@
          .vertical-timeline-element-content{
              box-shadow: none;
              padding: 20px 20px;
+             .vertical-timeline-element-date{
+              font-size: 2rem;
+              color: #ffffff;
+              opacity: 1;
+             }
          }
          .vertical-timeline-element-content-arrow{
              display: none;
          }
+         .vertical-timeline-element-title-wrapper{
+           display: flex;
+           align-items: center;
+           h3,h4{
+             font-size: 15px;
+           }
+           h4{
+             margin-left: 8px;
+           }
+         }
+         p{
+          font-size: 18px;
+        }
      }
   }
 }
