@@ -4,7 +4,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { MdWork } from "react-icons/md";
-import { FaBlackTie } from "react-icons/fa";
+import { FaBlackTie } from "react-icons/fa"; 
 import PageHeaderContent from "../../components/PageHeaderContent";
 import "./styles.scss";
 const data = {

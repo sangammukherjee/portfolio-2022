@@ -1,8 +1,9 @@
 import React from "react";
-import { FaDev, FaBlackTie, FaDatabase } from "react-icons/fa";
+import { FaDev, FaDatabase } from "react-icons/fa";
 import { DiAndroid, DiApple } from "react-icons/di";
+import {BsInfoCircleFill} from 'react-icons/bs'
 import PageHeaderContent from "../../components/PageHeaderContent";
-import { AnimateKeyframes, Animate } from "react-simple-animate";
+import { Animate } from "react-simple-animate";
 import "./styles.scss";
 
 const personalDetails = [
@@ -33,7 +34,7 @@ function About() {
     <section className="about" id="about">
       <PageHeaderContent
         headerText="About Me"
-        icon={<FaBlackTie size={40} />}
+        icon={<BsInfoCircleFill size={40} />}
       />
       <div className="about__content">
         <div className="about__content__personalWrapper">

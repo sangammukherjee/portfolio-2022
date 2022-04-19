@@ -1,5 +1,5 @@
 import PageHeaderContent from "../../components/PageHeaderContent";
-import { FaBlackTie } from "react-icons/fa";
+import { RiContactsFill } from "react-icons/ri";
 import { Animate } from "react-simple-animate";
 import "./styles.scss";
 
@@ -8,7 +8,7 @@ function Contact() {
     <section className="contact" id="contact">
       <PageHeaderContent
         headerText="Contact Me"
-        icon={<FaBlackTie size={40} />}
+        icon={<RiContactsFill size={40} />}
       />
       <div className="contact__content">
         <Animate

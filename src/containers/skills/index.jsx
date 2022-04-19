@@ -1,5 +1,5 @@
 import React from "react";
-import { FaBlackTie } from "react-icons/fa";
+import { GiSkills } from "react-icons/gi"; 
 import PageHeaderContent from "../../components/PageHeaderContent";
 import { Line } from "rc-progress";
 import { AnimateKeyframes, Animate } from "react-simple-animate";
@@ -86,7 +86,7 @@ function Skills() {
     <section id="skills" className="skills">
       <PageHeaderContent
         headerText="My Skills"
-        icon={<FaBlackTie size={40} />}
+        icon={<GiSkills size={40} />}
       />
       <div className="skills__content-wrapper">
         {data.map((item) => (

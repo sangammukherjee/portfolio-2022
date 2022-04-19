@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import PageHeaderContent from "../../components/PageHeaderContent";
-import { FaBlackTie } from "react-icons/fa";
+import { AiFillProject } from "react-icons/ai";
 import "./styles.scss";
 import ImageOne from "../../images/pexels-cottonbro-5483077.jpg";
 import ImageTwo from "../../images/pexels-jorge-jesus-614117.jpg";
@@ -103,7 +103,7 @@ function Portfolio() {
     <section id="portfolio" className="portfolio">
       <PageHeaderContent
         headerText="My Portfolio"
-        icon={<FaBlackTie size={40} />}
+        icon={<AiFillProject size={40} />}
       />
       <div className="portfolio__content">
         <ul className="portfolio__content__filter">
