@@ -10,6 +10,7 @@
     }
     &__personalWrapper {
       h3 {
+        margin-bottom: 10px;
         font-size: 2.5rem;
         font-weight: 700;
         font-family: "Playfair Display", serif;
@@ -29,11 +30,16 @@
            right: 0;
        }
       }
+      h3.personalContent{
+        padding-top: 20px;
+      }
       p {
         font-family: "Playfair Display", serif;
         color: #ffffff;
         font-size: 1.5rem;
         line-height: 1.65;
+        padding-bottom: 20px;
+        border-bottom: 1px dashed #ffdd40;
       }
 
       ul > li {
@@ -53,7 +59,8 @@
           color: #ffffff;
         }
         span.title {
-          border-color: #00a3e1;
+          border-color: #ffdd40;
+          padding-bottom: 5px;
         }
         span.value {
           border: none;

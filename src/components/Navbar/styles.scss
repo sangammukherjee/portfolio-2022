@@ -15,11 +15,11 @@
     align-items: center;
     width: 100%;
     height: 80px;
+    padding: 0px 20px;
     max-width: 1500px;
     &__logo {
       color: #ffdd40;
       align-items: center;
-      margin-left: 20px;
       cursor: pointer;
       text-decoration: none;
       font-size: 2rem;
@@ -29,7 +29,6 @@
       display: flex;
       list-style: none;
       text-align: center;
-      margin-right: 2rem;
       &__item {
         line-height: 40px;
         margin-right: 1.5rem;
@@ -53,6 +52,12 @@
           height: 100%;
           border-bottom: 3px solid transparent;
         }
+        &__links{
+          padding-right: 0px;
+        }
+      }
+      &__item:last-child{
+        margin: 0;
       }
     }
   }
@@ -114,10 +119,6 @@
   }
   .nav-icon {
     display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
     color: #ffdd40;

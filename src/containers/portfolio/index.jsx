@@ -88,13 +88,12 @@ const filteroptions = [
   {
     label: "Design",
     id: 3,
-  }
+  },
 ];
 
 function Portfolio() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const [filterValue, setFiltervalue] = useState(1);
-  console.log(hoveredIndex);
 
   const updatedPortFolioData =
     filterValue === 1
@@ -109,7 +108,9 @@ function Portfolio() {
       <div className="portfolio__content">
         <ul className="portfolio__content__filter">
           {filteroptions.map((option) => (
-            <li onClick={()=>setFiltervalue(option.id)} key={option.id}>{option.label}</li>
+            <li className={option.id === filterValue && 'active'} onClick={() => setFiltervalue(option.id)} key={option.id}>
+              {option.label}
+            </li>
           ))}
         </ul>
         <div className="portfolio__content__cards">
@@ -124,14 +125,14 @@ function Portfolio() {
                   <img src={item.image} />
                 </a>
               </div>
-              {index === hoveredIndex && (
-                <div className="portfolio__content__cards__item__hover-content">
-                  <p>{item.projectName}</p>
-                  <a href={item.projectLink} role="button">
-                    Check
-                  </a>
-                </div>
-              )}
+              <div className="overlay">
+                {index === hoveredIndex && (
+                  <div>
+                    <p>{item.projectName}</p>
+                    <button>Visit</button>
+                  </div>
+                )}
+              </div>
             </div>
           ))}
         </div>

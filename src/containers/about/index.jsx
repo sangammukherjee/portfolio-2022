@@ -36,7 +36,7 @@ function About() {
       />
       <div className="about__content">
         <div className="about__content__personalWrapper">
-          <h3>Front End Developer</h3>
+          <h3 className="developerContent">Front End Developer</h3>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis,
             nihil, corrupti ratione iure obcaecati debitis nisi porro non,
@@ -57,7 +57,7 @@ function About() {
             Molestias quas commodi neque adipisci a autem iusto at, dicta
             nostrum distinctio.
           </p>
-          <h3>Personal Information</h3>
+          <h3 className="personalContent">Personal Information</h3>
           <ul>
             {personalDetails.map((item) => (
               <li key={item.label}>

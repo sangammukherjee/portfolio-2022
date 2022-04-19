@@ -6,59 +6,58 @@
   align-items: center;
   &__text-wrapper {
     h1 {
-      color: #fff;
+      color: #ffdd40;
       margin: 0;
       font-weight: 400;
-      font-size: 10.3rem;
-      line-height: 8.7rem;
+      font-size: 8rem;
+      line-height: 10rem;
       position: relative;
-      span {
-        animation-name: rubberBand;
-
-          &.active:hover{
-            animation-name: rubberBand;
-            color: red;
-          }
-
-        &:hover {
-            animation-name: rubberBand;
-
-        }
-      }
+      overflow: hidden;
+      font-family: "Inconsolata", Consolas, monospace;
+      animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+      white-space: nowrap;
     }
   }
 }
 
-@keyframes rubberBand {
-    from {
-      transform: scale3d(1, 1, 1);
-    }
-  
-    30% {
-      transform: scale3d(1.25, 0.75, 1);
-    }
-  
-    40% {
-      transform: scale3d(0.75, 1.25, 1);
-    }
-  
-    50% {
-      transform: scale3d(1.15, 0.85, 1);
-    }
-  
-    65% {
-      transform: scale3d(.95, 1.05, 1);
-    }
-  
-    75% {
-      transform: scale3d(1.05, .95, 1);
-    }
-  
-    to {
-      transform: scale3d(1, 1, 1);
-    }
+@media only screen and (max-width : 550px){
+  .home__text-wrapper > h1{
+    font-size: 3rem;
+    line-height: 5rem;
   }
-  
-  .rubberBand {
-    animation-name: rubberBand;
+}
+
+@media only screen and (min-width : 551px) and (max-width : 768px){
+  .home__text-wrapper > h1{
+    font-size: 4rem;
+    line-height: 6rem;
   }
+}
+
+@media only screen and (min-width : 769px) and (max-width : 990px){
+  .home__text-wrapper > h1{
+    font-size: 6rem;
+    line-height: 8rem;
+  }
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
