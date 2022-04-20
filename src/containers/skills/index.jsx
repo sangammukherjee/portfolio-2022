@@ -34,50 +34,46 @@ const data = [
     label: "BACK END",
     data: [
       {
-        skillName: "HTML",
-        percentage: "95",
-      },
-      {
-        skillName: "CSS",
-        percentage: "95",
-      },
-      {
-        skillName: "JAVASCRIPT",
+        skillName: "JAVA",
         percentage: "90",
       },
       {
-        skillName: "REACT JS",
-        percentage: "90",
+        skillName: "PYTHON",
+        percentage: "65",
       },
       {
-        skillName: "ANGULAR",
+        skillName: "RUBY",
+        percentage: "45",
+      },
+      {
+        skillName: "C#",
         percentage: "75",
       },
+      {
+        skillName: "KOTLIN",
+        percentage: "55",
+      }
     ],
   },
   {
     label: "DATABASES",
     data: [
       {
-        skillName: "HTML",
+        skillName: "MYSQL",
         percentage: "95",
       },
       {
-        skillName: "CSS",
-        percentage: "95",
+        skillName: "MONGODB",
+        percentage: "68",
       },
       {
-        skillName: "JAVASCRIPT",
-        percentage: "90",
+        skillName: "REDIS",
+        percentage: "35",
       },
       {
-        skillName: "REACT JS",
-        percentage: "90",
-      },
-      {
-        skillName: "ANGULAR",
-        percentage: "75",
-      },
+        skillName: "ORACLE",
+        percentage: "88",
+      }
     ],
   },
 ];

@@ -1,7 +1,7 @@
 import React from "react";
 import { FaDev, FaDatabase } from "react-icons/fa";
 import { DiAndroid, DiApple } from "react-icons/di";
-import {BsInfoCircleFill} from 'react-icons/bs'
+import { BsInfoCircleFill } from "react-icons/bs";
 import PageHeaderContent from "../../components/PageHeaderContent";
 import { Animate } from "react-simple-animate";
 import "./styles.scss";
@@ -49,24 +49,17 @@ function About() {
           >
             <h3 className="developerContent">Front End Developer</h3>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Veritatis, nihil, corrupti ratione iure obcaecati debitis nisi
-              porro non, consequatur nemo quasi perspiciatis voluptatem.
-              Adipisci ad aspernatur repudiandae hic doloribus, dolorum
-              similique deserunt. Voluptates numquam illum laborum earum
-              similique nihil quae amet ratione, dolores magni aliquid pariatur
-              ut quos quas id repellat nesciunt eum inventore veritatis!
-              Pariatur nam tempora, voluptate, assumenda quo, officiis ab earum
-              laboriosam repellendus aperiam minus voluptas quisquam sed
-              doloribus architecto inventore illo. Iure ut esse adipisci illo
-              debitis saepe sunt eius, deserunt unde, aspernatur accusamus
-              suscipit libero beatae! Repellendus ratione quos blanditiis fuga
-              voluptate! Facere quisquam neque vel quam repudiandae cum ut
-              eveniet sit. Tempore, quod enim. Quasi culpa beatae deleniti enim,
-              tempora architecto voluptates eligendi corrupti suscipit itaque
-              minus voluptatem laborum qui nam nihil rem illo eius, nulla quam
-              fugiat dignissimos libero exercitationem sint? Molestias quas
-              commodi neque adipisci a autem iusto at, dicta nostrum distinctio.
+              Seasoned and independent Front End Developer with 5 years of
+              experience in blending the art of design with skill of programming
+              to deliver an immersive and engaging user experience through
+              efficient website development, proactive feature optimization, and
+              relentless debugging. Very passionate about aesthetics and UI
+              design. It is imperative that you provide a thorough and
+              professional approach to your resume. As a Front End Developer
+              you'll be judged by your ability to use UX and UI concepts and
+              follow design guidelines. It's about expressing your attention to
+              detail and how you can help implement design ideas for your future
+              employer.
             </p>
           </Animate>
           <Animate

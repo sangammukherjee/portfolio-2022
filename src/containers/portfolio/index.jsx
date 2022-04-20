@@ -16,37 +16,37 @@ import ImageTen from "../../images/pexels-pixabay-276514.jpg";
 const portfolioData = [
   {
     sectionId: 2,
-    projectName: "ToDo Application",
+    projectName: "Ecommerce Application",
     projectLink: "",
     image: ImageOne,
   },
   {
     sectionId: 2,
-    projectName: "ToDo Application",
+    projectName: "Notes App",
     projectLink: "",
     image: ImageTwo,
   },
   {
     sectionId: 2,
-    projectName: "ToDo Application",
+    projectName: "Theme App",
     projectLink: "",
     image: ImageThree,
   },
   {
     sectionId: 3,
-    projectName: "ToDo Application",
+    projectName: "Supplier Design App",
     projectLink: "",
     image: ImageFour,
   },
   {
     sectionId: 3,
-    projectName: "ToDo Application",
+    projectName: "Shopping Cart Design",
     projectLink: "",
     image: ImageFive,
   },
   {
     sectionId: 2,
-    projectName: "ToDo Application",
+    projectName: "Notes Application",
     projectLink: "",
     image: ImageSeven,
   },

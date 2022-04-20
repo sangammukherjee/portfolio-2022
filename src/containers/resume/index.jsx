@@ -10,42 +10,42 @@ import "./styles.scss";
 const data = {
   experience: [
     {
-      title: "Creative Director",
+      title: "Consultant",
       subTitle: "Miami, FL",
       description:
-        "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+        " User Experience, Visual Design",
     },
     {
-      title: "Creative Director",
-      subTitle: "Miami, FL",
+      title: "Senior Consultant",
+      subTitle: "London, UK",
       description:
-        "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+        "Web development, Databases, Backend developement",
     },
     {
-      title: "Creative Director",
-      subTitle: "Miami, FL",
+      title: "Project Manager",
+      subTitle: "Bangalore, INDIA",
       description:
-        "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+        "Creative Direction Project Management, Team Leading",
     },
   ],
   education: [
     {
-      title: "Creative Director",
-      subTitle: "Miami, FL",
+      title: "Secondary",
+      subTitle: "ABC School",
       description:
-        "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+        "10th Grade",
     },
     {
-      title: "Creative Director",
-      subTitle: "Miami, FL",
+      title: "Higher Secondary",
+      subTitle: "ABC School of higher education",
       description:
-        "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+        "12th Grade in Science",
     },
     {
-      title: "Creative Director",
-      subTitle: "Miami, FL",
+      title: "B.Tech",
+      subTitle: "XYZ institute of technology",
       description:
-        "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+        "Bachelor of technology in computer science",
     },
   ],
 };
@@ -94,7 +94,7 @@ function Resume() {
         <div className="timeline__education">
           <h3 className="timeline__education__header-text">Education</h3>
           <VerticalTimeline layout="1-column" lineColor="#ffdd40">
-            {data.experience.map((item) => (
+            {data.education.map((item) => (
               <VerticalTimelineElement
                 key={item.title}
                 className="timeline__experience__vertical-timeline-element"
