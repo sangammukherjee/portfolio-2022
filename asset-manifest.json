@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.127d5396.css",
+    "main.js": "/portfolio/static/js/main.272791c2.js",
+    "static/js/937.0a13bb1b.chunk.js": "/portfolio/static/js/937.0a13bb1b.chunk.js",
+    "static/js/787.a2cb61a6.chunk.js": "/portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/pexels-pixabay-276514.jpg": "/portfolio/static/media/pexels-pixabay-276514.2b1bb634a97a85735415.jpg",
+    "static/media/pexels-cottonbro-5483077.jpg": "/portfolio/static/media/pexels-cottonbro-5483077.8e4e65683dc0149fc984.jpg",
+    "static/media/pexels-pixabay-39284.jpg": "/portfolio/static/media/pexels-pixabay-39284.3917bf8c30f22f7e74fc.jpg",
+    "static/media/pexels-karolina-grabowska-4195324.jpg": "/portfolio/static/media/pexels-karolina-grabowska-4195324.9b66aa7c0651acf1cfb7.jpg",
+    "static/media/pexels-miguel-á-padriñán-68562.jpg": "/portfolio/static/media/pexels-miguel-á-padriñán-68562.0efefb69f17d89ffb9cf.jpg",
+    "static/media/pexels-tirachard-kumtanom-733857.jpg": "/portfolio/static/media/pexels-tirachard-kumtanom-733857.2e2ba76078ae2ce10a60.jpg",
+    "static/media/pexels-picjumbocom-196644.jpg": "/portfolio/static/media/pexels-picjumbocom-196644.5e9fcb3c7875e1bc1e47.jpg",
+    "static/media/pexels-pixabay-261705.jpg": "/portfolio/static/media/pexels-pixabay-261705.ddd61c4430fb00c8641b.jpg",
+    "static/media/pexels-kevin-ku-577585.jpg": "/portfolio/static/media/pexels-kevin-ku-577585.1b336ad8668953c0a113.jpg",
+    "static/media/pexels-jorge-jesus-614117.jpg": "/portfolio/static/media/pexels-jorge-jesus-614117.baf82bff0266b026ebca.jpg",
+    "index.html": "/portfolio/index.html",
+    "main.127d5396.css.map": "/portfolio/static/css/main.127d5396.css.map",
+    "main.272791c2.js.map": "/portfolio/static/js/main.272791c2.js.map",
+    "937.0a13bb1b.chunk.js.map": "/portfolio/static/js/937.0a13bb1b.chunk.js.map",
+    "787.a2cb61a6.chunk.js.map": "/portfolio/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.127d5396.css",
+    "static/js/main.272791c2.js"
+  ]
+}
