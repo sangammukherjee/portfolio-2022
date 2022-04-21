@@ -14,7 +14,7 @@
     align-items: center;
     &__header-text {
       display: inline-block;
-      color: #fff;
+      color: var(--selected-theme-sub-text-color);
       font-size: 22px;
       font-weight: 600;
       line-height: 1em;
@@ -22,14 +22,14 @@
       position: relative;
       text-transform: uppercase;
       padding: 5px 10px;
-      border-bottom: 2px solid #ffdd40;
+      border-bottom: 2px solid var(--selected-theme-main-color);
     }
     &__header-text::before, &__header-text::after{
         position: absolute;
         content: "";
         width: 2px;
         height: 5px;
-        background-color: #ffdd40;
+        background-color: var(--selected-theme-main-color);
         bottom: -1px;
     }
     &__header-text::before{
@@ -48,7 +48,7 @@
              padding: 20px 20px;
              .vertical-timeline-element-date{
               font-size: 2rem;
-              color: #ffffff;
+              color: var(--selected-theme-sub-text-color);
               opacity: 1;
              }
          }

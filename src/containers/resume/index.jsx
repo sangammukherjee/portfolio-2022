@@ -60,21 +60,21 @@ function Resume() {
       <div className="timeline">
         <div className="timeline__experience">
           <h3 className="timeline__experience__header-text">Experience</h3>
-          <VerticalTimeline layout="1-column" lineColor="#ffdd40">
+          <VerticalTimeline layout="1-column" lineColor="var(--selected-theme-main-color)">
             {data.experience.map((item) => (
               <VerticalTimelineElement
                 key={item.title}
                 className="timeline__experience__vertical-timeline-element"
                 contentStyle={{
                   background: "none",
-                  color: "#fff",
-                  border: "1.5px solid #ffdd40",
+                  color: "var(--selected-theme-sub-text-color)",
+                  border: "1.5px solid var(--selected-theme-main-color)",
                 }}
                 contentArrowStyle={{
                   borderRight: "7px solid  rgb(33, 150, 243)",
                 }}
                 date="2011 - present"
-                iconStyle={{ background: "#181818", color: "#ffdd40" }}
+                iconStyle={{ background: "#181818", color: "var(--selected-theme-main-color)" }}
                 icon={<MdWork />}
                 dateClassName="vertical-timeline-element-custom-date"
               >
@@ -93,21 +93,21 @@ function Resume() {
         </div>
         <div className="timeline__education">
           <h3 className="timeline__education__header-text">Education</h3>
-          <VerticalTimeline layout="1-column" lineColor="#ffdd40">
+          <VerticalTimeline layout="1-column" lineColor="var(--selected-theme-main-color)">
             {data.education.map((item) => (
               <VerticalTimelineElement
                 key={item.title}
                 className="timeline__experience__vertical-timeline-element"
                 contentStyle={{
                   background: "none",
-                  color: "#fff",
-                  border: "1.5px solid #ffdd40",
+                  color: "var(--selected-theme-sub-text-color)",
+                  border: "1.5px solid var(--selected-theme-main-color)",
                 }}
                 contentArrowStyle={{
                   borderRight: "7px solid  rgb(33, 150, 243)",
                 }}
                 date="2011 - present"
-                iconStyle={{ background: "#181818", color: "#ffdd40" }}
+                iconStyle={{ background: "#181818", color: "var(--selected-theme-main-color)" }}
                 icon={<MdWork />}
               >
                 <div className="vertical-timeline-element-title-wrapper">

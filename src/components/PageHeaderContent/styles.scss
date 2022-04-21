@@ -1,5 +1,5 @@
 .wrapper {
-  border-bottom: 1px dashed #ffdd40;
+  border-bottom: 1px dashed var(--selected-theme-main-color);
   padding: 20px;
   display: flex;
   align-items: center;
@@ -9,7 +9,7 @@
     letter-spacing: 1.5px;
     line-height: 1em;
     text-transform: capitalize;
-    color: #ffdd40;
+    color: var(--selected-theme-main-color);
     position: relative;
     display: flex;
     flex: 1;
@@ -17,7 +17,7 @@
 
   span {
     svg {
-      color: #ffdd40;
+      color: var(--selected-theme-main-color);
     }
   }
 }

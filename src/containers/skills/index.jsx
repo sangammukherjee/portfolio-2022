@@ -115,7 +115,7 @@ function Skills() {
                       <Line
                         percent={skill.percentage}
                         strokeWidth="2"
-                        strokeColor="#ffdd40"
+                        strokeColor="var(--selected-theme-main-color)"
                         strokeLinecap="square"
                         trailWidth="2"
                       />

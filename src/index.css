@@ -1,15 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap");
 
 :root {
+  --selected-theme-background-color: var(--yellow-theme-background-color);
+  --selected-theme-main-color: var(--yellow-theme-main-color);
+  --selected-theme-sub-text-color: var(--yellow-theme-sub-text-color);
+  --selected-theme-nav-background-color: var(--yellow-theme-nav-background-color);
+
+  --yellow-theme-background-color : #1d1d1d;
+  --yellow-theme-main-color : #ffdd40;
+  --yellow-theme-sub-text-color : #ffffff;
+  --yellow-theme-nav-background-color : #181818;
+
+
+  --red-theme-background-color : #1d1d1d; 
+  --red-theme-main-color : #E82A2A; 
+  --red-theme-sub-text-color : #ffffff;
+  --red-theme-nav-background-color : #181818;
+
+  --green-theme-background-color : #1d1d1d; 
+  --green-theme-main-color : #6ac045; 
+  --green-theme-sub-text-color : #ffffff;
+  --green-theme-nav-background-color : #181818;
+
+
+  --purple-theme-background-color : #1d1d1d; 
+  --purple-theme-main-color : #5078FF; 
+  --purple-theme-sub-text-color : #ffffff;
+  --purple-theme-nav-background-color : #181818;
+
   --font-base: "Roboto Slab", serif;
 
-  --primary-color: #edf2f8;
-  --secondary-color: #313bac;
-  --black-color: #030303;
-  --lightGray-color: #e4e4e4;
-  --gray-color: #6b7688;
-  --brown-color: #46364a;
-  --white-color: #ffffff;
+
 }
 
 * {
@@ -25,7 +46,7 @@ html{
 }
 
 body {
-  background: #1d1d1d;
+  background: var(--selected-theme-background-color);
   height: 100%;
 }
 #root{

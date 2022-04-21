@@ -9,7 +9,7 @@
     align-items: center;
     flex-direction: column;
     h1 {
-      color: #ffdd40;
+      color: var(--selected-theme-main-color);
       margin: 0;
       font-weight: 400;
       font-size: 8rem;
@@ -26,13 +26,13 @@
       margin-top: 10px;
       font-size: 2rem;
       background: transparent;
-      color: #ffdd40;
-      border: 1.5px solid #ffdd40;
+      color: var(--selected-theme-main-color);
+      border: 1.5px solid var(--selected-theme-main-color);
       border-radius: 4px;
       font-weight: 500;
       &:hover {
         color: #000000;
-        background: #ffdd40;
+        background: var(--selected-theme-main-color);
         font-weight: 500;
       }
     }

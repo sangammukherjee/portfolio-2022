@@ -14,18 +14,18 @@
         font-size: 2.5rem;
         font-weight: 700;
         font-family: "Playfair Display", serif;
-        color: #ffdd40;
+        color: var(--selected-theme-main-color);
       }
       h3.personalContent{
         padding-top: 20px;
       }
       p {
         font-family: "Playfair Display", serif;
-        color: #ffffff;
+        color: var(--selected-theme-sub-text-color);
         font-size: 1.6rem;
         line-height: 1.65;
         padding-bottom: 20px;
-        border-bottom: 1px dashed #ffdd40;
+        border-bottom: 1px dashed var(--selected-theme-main-color);
       }
 
       ul > li {
@@ -37,15 +37,15 @@
           font-size: 16px;
           font-weight: 700;
           letter-spacing: 0.5px;
-          border-bottom: 2px solid #ffffff;
+          border-bottom: 2px solid var(--selected-theme-sub-text-color);
           position: relative;
           display: inline-block;
           margin-right: 15px;
           padding-bottom: 1px;
-          color: #ffffff;
+          color: var(--selected-theme-sub-text-color);
         }
         span.title {
-          border-color: #ffdd40;
+          border-color: var(--selected-theme-main-color);
           padding-bottom: 5px;
         }
         span.value {
@@ -63,16 +63,16 @@
         font-size: 2.5rem;
         font-weight: 700;
         font-family: "Playfair Display", serif;
-        color: #ffffff;
+        color: var(--selected-theme-sub-text-color);
       }
       &__innerContent {
         width: 350px;
         height: 350px;
        // margin-top: 40px;
-        background: radial-gradient(180px, #ffdd40, transparent 90%);
+        background: radial-gradient(180px, var(--selected-theme-main-color), transparent 90%);
         position: relative;
         border-radius: 50%;
-        border: 1.5px solid #ffdd40;
+        border: 1.5px solid var(--selected-theme-main-color);
        animation: rotation 10s linear 1s infinite;
         div:nth-child(1) {
           position: absolute;
@@ -101,7 +101,7 @@
             font-size: 1.5rem;
             font-weight: 700;
             font-family: "Playfair Display", serif;
-            color: #ffdd40;   
+            color: var(--selected-theme-main-color);   
         }
       }
     }
@@ -127,7 +127,7 @@
       &__innerContent{
         width: 250px;
         height: 250px;
-        background: radial-gradient(100px, #ffdd40, transparent 120%); 
+        background: radial-gradient(100px, var(--selected-theme-main-color), transparent 120%); 
         div:nth-child(1) {
           top: -15%;
           left: 38.5%;

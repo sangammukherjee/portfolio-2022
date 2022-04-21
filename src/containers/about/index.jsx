@@ -94,19 +94,19 @@ function About() {
           >
             <div className="about__content__servicesWrapper__innerContent">
               <div>
-                <DiApple color="#ffdd40" size={60} />
+                <DiApple color="var(--selected-theme-main-color)" size={60} />
                 {/* <p className="service-text">Web Design</p> */}
               </div>
               <div>
-                <FaDev color="#ffdd40" size={60} />
+                <FaDev color="var(--selected-theme-main-color)" size={60} />
                 {/* <p className="service-text">Web Development</p> */}
               </div>
               <div>
-                <FaDatabase color="#ffdd40" size={60} />
+                <FaDatabase color="var(--selected-theme-main-color)" size={60} />
                 {/* <p className="service-text">Databases</p> */}
               </div>
               <div>
-                <DiAndroid color="#ffdd40" size={60} />
+                <DiAndroid color="var(--selected-theme-main-color)" size={60} />
                 {/* <p className="service-text">Android Developement</p> */}
               </div>
             </div>

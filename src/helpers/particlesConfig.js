@@ -29,7 +29,7 @@ export default {
   },
   particles: {
     color: {
-      value: "#ffdd40",
+      value: "var(--selected-theme-main-color)",
     },
     links: {
       color: "#ffffff",

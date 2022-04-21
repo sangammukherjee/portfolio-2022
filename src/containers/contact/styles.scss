@@ -3,7 +3,7 @@
     padding: 20px;
     &__header-text {
       display: inline-block;
-      color: #fff;
+      color: var(--selected-theme-sub-text-color);
       font-size: 22px;
       font-weight: 600;
       line-height: 1em;
@@ -11,7 +11,7 @@
       position: relative;
       text-transform: uppercase;
       padding: 5px 10px;
-      border-bottom: 2px solid #ffdd40;
+      border-bottom: 2px solid var(--selected-theme-main-color);
     }
     &__header-text::before,
     &__header-text::after {
@@ -19,7 +19,7 @@
       content: "";
       width: 2px;
       height: 5px;
-      background-color: #ffdd40;
+      background-color: var(--selected-theme-main-color);
       bottom: -1px;
     }
     &__header-text::before {
@@ -41,13 +41,13 @@
           .inputEmail,
           .inputDescription {
             width: 100%;
-            border: 2px solid #ffdd40;
+            border: 2px solid var(--selected-theme-main-color);
             padding: 15px 10px;
             transition: all 0.5s ease;
             position: relative;
             z-index: 1;
             background-color: transparent;
-            color: #ffdd40;
+            color: var(--selected-theme-main-color);
           }
           .nameLabel,
           .emailLabel,
@@ -58,7 +58,7 @@
             left: 12px;
             transition: all 0.2s ease;
             z-index: 0;
-            color: #ffdd40;
+            color: var(--selected-theme-main-color);
             font-size: 16px;
           }
           .inputName:focus,
@@ -80,13 +80,13 @@
         padding: 10px 70px;
         font-size: 2rem;
         background: transparent;
-        color: #ffdd40;
-        border: 1.5px solid #ffdd40;
+        color: var(--selected-theme-main-color);
+        border: 1.5px solid var(--selected-theme-main-color);
         border-radius: 4px;
         font-weight: 500;
         &:hover{
           color: #000000;
-          background: #ffdd40 ;
+          background: var(--selected-theme-main-color) ;
           font-weight: 500;
 
         }

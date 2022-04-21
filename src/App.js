@@ -10,6 +10,8 @@ import Portfolio from "./containers/portfolio";
 import Resume from "./containers/resume";
 import Contact from "./containers/contact";
 import Skills from "./containers/skills";
+import Theme from "./components/Theme";
+
 function App() {
   const particlesInit = async (main) => {
     await loadFull(main);
@@ -31,6 +33,7 @@ function App() {
         <Navbar />
       </div>
       <div className="App__main-content">
+        <Theme/>
         <Routes>
           <Route index path="/" element={<Home />} />
           <Route path="about" element={<About />} />

@@ -54,7 +54,7 @@ function Contact() {
                   style={{ resize: "none" }}
                 />
                 <label htmlFor="description" className="descriptionLabel">
-                  Email
+                  Description
                 </label>
               </div>
             </div>
