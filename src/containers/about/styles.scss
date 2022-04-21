@@ -22,7 +22,7 @@
       p {
         font-family: "Playfair Display", serif;
         color: var(--selected-theme-sub-text-color);
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         line-height: 1.65;
         padding-bottom: 20px;
         border-bottom: 1px dashed var(--selected-theme-main-color);
@@ -34,13 +34,13 @@
         span.title,
         span.value {
           font-family: "Playfair Display", serif;
-          font-size: 16px;
+          font-size: 18px;
           font-weight: 700;
           letter-spacing: 0.5px;
           border-bottom: 2px solid var(--selected-theme-sub-text-color);
           position: relative;
           display: inline-block;
-          margin-right: 15px;
+          margin-right: 16px;
           padding-bottom: 1px;
           color: var(--selected-theme-sub-text-color);
         }
